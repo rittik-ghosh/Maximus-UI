@@ -1,0 +1,28 @@
+
+.container{
+    margin: 2rem auto;
+    min-width: 15rem;
+    max-width: 25rem;
+    min-height: 5rem;
+    max-height: 10rem;
+    background-color: var( --st-background-grey);
+    border: 2px solid grey;
+}
+.padding-between{
+    padding:0.5rem 0.5rem;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-round {
+    border-radius: 50%;
+}
+
+.img-square {
+    border-radius: 10%;
+}
+
+
