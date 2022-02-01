@@ -1,15 +1,13 @@
 .container {
     margin: 3rem auto;
-    min-width: 15rem;
-    max-width: 25rem;
-    min-height: 5rem;
-    max-height: 10rem;
+    width:clamp(15rem,20rem,25rem);
+    height:clamp(2.5rem,5rem,10rem);
     background-color: var(--st-background-grey);
     border: 2px solid grey;
 }
 
 .padding-between {
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
 }
 
 .img-responsive {
