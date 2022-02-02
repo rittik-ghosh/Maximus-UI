@@ -1,8 +1,8 @@
-@import url('common\ _css/general.css');
-@import url('common\ _css/topography.css');
-@import url('common\ _css/utility.css');
-@import url('common\ _css/variables.css');
-@import url('common\ _css/reset.css');
-@import url('Components/alert.css');
+@import url('/Stylesheets/common-css/reset.css');
+@import url('/Stylesheets/common-css/utility.css');
+@import url('/Stylesheets/common-css/topography.css');
+@import url('/Stylesheets/common-css/variables.css');
+@import url('/Stylesheets/common-css/general.css');
+@import url('/Stylesheets/Components/alert.css');
 
 
