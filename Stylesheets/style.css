@@ -1,7 +1,7 @@
-@import url('Components/avatar.css');
-@import url('common_css/reset.css');
-@import url('common_css/topography.css');
-@import url('common_css/utility.css');
-@import url('common_css/variables.css');
-@import url('common_css/general.css');
+@import url('/Stylesheets/Components/avatar.css');
+@import url('/Stylesheets/common_css/reset.css');
+@import url('/Stylesheets/common_css/topography.css');
+@import url('/Stylesheets/common_css/utility.css');
+@import url('/Stylesheets/common_css/variables.css');
+@import url('/Stylesheets/common_css/general.css');
 

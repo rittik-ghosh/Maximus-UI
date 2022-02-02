@@ -23,19 +23,19 @@
     box-shadow: 10px 10px 2px 10px #888888;
 }
 
-.sm {
+.avatar-sm {
     width: 1.5rem;
     height: 1.5rem;
 
 }
 
-.md {
+.avatar-md {
     width: 2.5rem;
     height: 2.5rem;
 
 }
 
-.lg {
+.avatar-lg {
     width: 3.5rem;
     height: 3.5rem;
 
