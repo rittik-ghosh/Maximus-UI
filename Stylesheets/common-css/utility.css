@@ -82,17 +82,6 @@
     align-items: center;
 }
 
-.child-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.child-stacked {
-    display: flex;
-    flex-direction: column;
-}
-
 /* Typography */
 
 .text-primary {
