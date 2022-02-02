@@ -5,6 +5,13 @@
     background-color: var(--st-background-grey);
     border: 2px solid grey;
 }
+.big-container{
+    margin: 3rem auto;
+    width:clamp(20rem,40rem,60rem);
+    height:clamp(10rem,18rem,30rem);
+    background-color: var(--st-background-grey);
+    border: 2px solid grey;
+}
 
 .padding-between {
     padding: 0.5rem;
