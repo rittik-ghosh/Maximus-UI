@@ -1,0 +1,81 @@
+.badge{
+    position: relative;
+    margin:1rem;
+ 
+}
+
+.badge i{
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+ 
+}
+.badge span{
+    display: inline-block;
+    background-color: var(--st-span-text);
+    color: var(--st-white);
+    font-weight: bold;
+    text-align: center;
+    width:1.3rem;
+    height:1.3rem;
+    border-radius: 50%;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.badge img{
+    position: relative;
+    display: inline-block;
+ 
+}
+.online{
+    display: inline-block;
+    background-color: var(--success-color);
+    color: var(--st-white);
+    width:1.3rem;
+    height:1.3rem;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 17px;
+    right: 10px;
+    border: 2px solid var(--st-white);
+}
+
+.offline{
+    display: inline-block;
+    background-color: var(--alert-color-fade);
+    color: var(--st-white);
+    width:1.3rem;
+    height:1.3rem;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 17px;
+    right: 10px;
+    border: 2px solid var(--st-white);
+}
+
+.dnd{
+    display: inline-block;
+    background-color: var(--st-span-text);
+    color: var(--st-white);
+    width:1.3rem;
+    height:1.3rem;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 17px;
+    right: 10px;
+    border: 2px solid var(--st-white);
+}
+
+.busy{
+    display: inline-block;
+    background-color: var(--warning-color);
+    color: var(--st-white);
+    width:1.3rem;
+    height:1.3rem;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 17px;
+    right: 10px;
+    border: 2px solid var(--st-white);
+}

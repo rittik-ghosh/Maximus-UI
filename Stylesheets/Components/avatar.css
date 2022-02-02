@@ -2,7 +2,6 @@
     max-width: 100%;
     height: auto;
     border-radius: 50%;
-    height: 2.5rem;
     width: 2.5rem;
 }
 
@@ -10,7 +9,6 @@
     max-width: 100%;
     height: auto;
     border-radius: 10%;
-    height: 2.5rem;
     width: 2.5rem;
 }
 
@@ -25,19 +23,19 @@
 
 .avatar-sm {
     width: 1.5rem;
-    height: 1.5rem;
+    height: auto;
 
 }
 
 .avatar-md {
     width: 2.5rem;
-    height: 2.5rem;
+    height: auto;
 
 }
 
 .avatar-lg {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 5.5rem;
+    height: auto;
 
 }
 
