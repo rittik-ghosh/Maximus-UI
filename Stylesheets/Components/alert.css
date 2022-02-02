@@ -1,0 +1,79 @@
+:root{
+    --alert-color:rgb(114,117,242);
+    --error-color:rgb(244,85,74);
+    --success-color:rgb(93,182,97);
+    --warning-color:rgb(254,162,25);
+    --alert-color-fade:rgb(197, 198, 240);
+    --error-color-fade:rgb(231, 168, 164);
+    --success-color-fade:rgb(197, 228, 198);
+    --warning-color-fade:rgb(241, 220, 187);
+}
+.alert{
+    color: var(--st-white);
+    width:clamp(5rem,36rem,35rem);
+    height:clamp(1rem,2.5rem,3rem);
+    margin:1rem;
+    display: flex;
+    align-items: center;
+    padding:1rem;
+    border-radius: 4px;
+}
+.primary{
+background-color:var(--alert-color) ;
+}
+.error{
+background-color:var(--error-color) ;
+}
+.success{
+background-color:var(--success-color) ;
+}
+.warning{
+background-color:var(--warning-color) ;
+}
+
+.outline-primary{
+    background-color: white;
+    border:1px solid var(--alert-color);
+    color:var(--alert-color);
+
+}
+.outline-error{
+    background-color: white;
+    border:1px solid var(--error-color);
+    color:var(--error-color);
+}
+.outline-success{
+    background-color: white;
+    border:1px solid var(--success-color);
+    color:var(--success-color);
+}
+.outline-warning{
+    background-color: white;
+    border:1px solid var(--warning-color);
+    color:var(--warning-color);
+}
+
+.alert i{
+    padding-right:0.5rem;
+}
+.fadecolor-primary{
+    background-color:var(--alert-color-fade);
+    border:1px solid var(--alert-color);
+    color:var(--alert-color);
+
+}
+.fadecolor-error{
+    background-color: var(--error-color-fade);
+    border:1px solid var(--error-color);
+    color:var(--error-color);
+}
+.fadecolor-success{
+    background-color:var(--success-color-fade);
+    border:1px solid var(--success-color);
+    color:var(--success-color);
+}
+.fadecolor-warning{
+    background-color: var(--warning-color-fade);
+    border:1px solid var(--warning-color);
+    color:var(--warning-color);
+}
