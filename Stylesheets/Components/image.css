@@ -1,7 +1,6 @@
 .sq-img{
-    height:10rem;
-    width:10rem;
-    /* border-radius: 50%; */
+    height:clamp(5rem,10rem,15rem);
+    width:(5rem,10rem,15rem);;
 }
 
 .round-img{
