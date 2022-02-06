@@ -1,0 +1,75 @@
+label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.input-container {
+    margin: 3rem auto;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--st-background-grey);
+    padding: 1rem;
+    border: 2px solid grey;
+}
+
+.input-group {
+    width: 50vh;
+}
+
+.input-group input {
+    background: #fff;
+    border: 1px solid #999;
+    padding: 0.6rem 0.7rem;
+    font-size: .8rem;
+    margin: 5px 0;
+    width: 100%;
+    outline: none;
+    border-radius: 2px;
+}
+
+.err {
+    color: var(--st-span-text);
+}
+
+#error-ip {
+    border: 2px solid var(--st-span-text)
+}
+
+.success {
+    color: var(--success-color);
+    background-color: transparent;
+}
+
+#success-ip {
+    border: 2px solid var(--success-color)
+}
+
+.checkbox-ip {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%
+}
+
+.checkbox-ip input {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.5rem;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+}
+
+.slideContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
