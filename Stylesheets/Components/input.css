@@ -17,8 +17,8 @@ label {
 }
 
 .input-group input {
-    background: #fff;
-    border: 1px solid #999;
+    background: var(--st-white);
+    border: 1px solid var(--st-dark-gray);
     padding: 0.6rem 0.7rem;
     font-size: .8rem;
     margin: 5px 0;
@@ -27,7 +27,7 @@ label {
     border-radius: 2px;
 }
 
-.err {
+.error {
     color: var(--st-span-text);
 }
 
@@ -60,9 +60,9 @@ label {
 .slider {
     -webkit-appearance: none;
     width: 100%;
-    height: 15px;
+    height: 1rem;
     border-radius: 5px;
-    background: #d3d3d3;
+    background: var(--st-dark-gray);
     outline: none;
 }
 
