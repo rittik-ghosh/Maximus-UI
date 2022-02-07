@@ -1,0 +1,105 @@
+:root {
+    --btn-success-hover: green;
+}
+
+.btn {
+    width: clamp(3rem, 6rem, 7rem);
+    padding: 0.5rem;
+    background-color: var(--st-primary-color);
+    color: var(--st-white);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: var(--st-primary-hover);
+}
+
+.btn-secondary {
+    border: 1px solid var(--st-primary-color);
+    background-color: var(--st-secondary-color);
+    color: var(--st-black);
+}
+
+.btn-secondary:hover {
+    background-color: var(--st-secondary-hover);
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    color: var(--st-white);
+}
+
+.btn-success:hover {
+    background-color: var(--btn-success-hover);
+}
+
+.btn-fail {
+    background-color: var(--error-color);
+    color: var(--st-white);
+}
+
+.btn-fail:hover {
+    background-color: var(--st-red);
+}
+
+.outline {
+    border: 1px solid var(--st-primary-color);
+    background-color: var(--st-white);
+    color: var(--st-primary-color);
+}
+
+.outline:hover {
+    background-color: var(--st-primary-color);
+    color: var(--st-white);
+}
+
+.outline-secondary {
+    border: 1px solid var(--st-secondary-color);
+    background-color: var(--st-white);
+    color: var(--st-secondary-color);
+}
+
+.outline-secondary:hover {
+    background-color: var(--st-secondary-color);
+    color: var(--st-primary-color);
+}
+
+.outline-success {
+    border: 1px solid var(--success-color);
+    background-color: var(--st-white);
+    color: var(--success-text-color);
+}
+
+.outline-success:hover {
+    background-color: var(--success-color);
+    color: var(--success-color-light);
+}
+
+.outline-fail {
+    border: 1px solid var(--error-color);
+    background-color: var(--st-white);
+    color: var(--error-color);
+}
+
+.outline-fail:hover {
+    background-color: var(--error-color);
+    color: var(--st-white);
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(--st-white);
+}
+
+.btn i {
+    padding-right: 7px;
+}
+
+.btn-floating {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    background-color: var(--st-secondary-color);
+    color: var(--st-white);
+    border-radius: 50%;
+}

@@ -1,0 +1,42 @@
+.avatar-circle {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    width: 2.5rem;
+}
+
+.avatar-square {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+    width: 2.5rem;
+}
+
+.avatar img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.avatar-shadow {
+    box-shadow: 10px 10px 2px 10px #888888;
+}
+
+.avatar-sm {
+    width: 1.5rem;
+    height: auto;
+}
+
+.avatar-md {
+    width: 2.5rem;
+    height: auto;
+}
+
+.avatar-lg {
+    width: 5.5rem;
+    height: auto;
+}
+
+.shadow {
+    box-shadow: 3px 3px 3px 3px rgba(49, 47, 47, 0.2);
+    border: 1px solid gray
+}
