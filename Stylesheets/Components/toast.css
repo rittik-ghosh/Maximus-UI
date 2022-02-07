@@ -1,0 +1,36 @@
+.snack-bar{
+    max-width:25rem;
+    max-height: 7rem;
+    min-width: 26rem;
+    max-height: 4rem;
+    background-color: var(--st-primary-hover);
+    border-radius: 4px;
+    margin: 8px;
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+ 
+}
+
+.content{
+    color: var(--st-background-grey);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 6px;
+}
+.btns{
+    display: inline-flex;
+    justify-content: space-around;
+}
+#retry{
+    color:var(--st-secondary-hover);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+#close{
+    color: var(--st-white);
+    font-weight: bold;
+}
+.margin-center{
+    margin: 0.6rem 0.4rem;
+}

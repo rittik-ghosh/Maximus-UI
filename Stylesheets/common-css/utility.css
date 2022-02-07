@@ -164,3 +164,7 @@
 .background-grey {
     background-color: var(--st-background-grey);
 }
+.bgcolor-transparent{
+    background-color:transparent;
+    border:none;
+}
