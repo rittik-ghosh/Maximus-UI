@@ -1,25 +1,25 @@
-.ratings{
+.ratings {
     display: flex;
     justify-content: space-around;
 }
 
-.star{
+.rating-star {
     color: var(--st-black);
 }
-.star span{
+
+.star span {
     font-size: 2rem;
 }
 
-.selected{
+.selected {
     color: var(--warning-color);
 }
 
-.badge-rating{
-background-color: var(--success-color);
-border-radius: 7px;
-display: flex;
-align-items: center;
-font-size: 1.5rem;
-padding:5px;
-
+.badge-rating {
+    background-color: var(--success-color);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 5px;
 }
