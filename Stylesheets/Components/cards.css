@@ -22,7 +22,6 @@ body {
     background-color: var(--st-white);
     border-radius: 4px;
     padding: 0.5rem;
-
 }
 
 .shadow {
@@ -53,6 +52,7 @@ body {
 
 .card-dismiss {
     position: absolute;
+    cursor: pointer;
     padding: 5px;
     color: var(--st-black);
     top: 2px;
@@ -77,12 +77,6 @@ body {
 
 .reduced-price h3 {
     color: var(--success-color);
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .small-padding {
@@ -122,10 +116,14 @@ body {
 
 .order-buttons a:nth-child(1) {
     background-color: var(--st-secondary-hover);
+    text-align: center;
+    min-width: 3rem;
 }
 
 .order-buttons a:nth-child(2) {
     background-color: var(--st-primary-color);
+    text-align: center;
+    min-width: 3rem;
 }
 
 .heading-overlay {
@@ -156,10 +154,12 @@ body {
 
 .order-buttons-horizontal a:nth-child(1) {
     background-color: var(--st-secondary-hover);
+    text-align: center;
     padding: 4px;
 }
 
 .order-buttons-horizontal a:nth-child(2) {
     background-color: var(--st-primary-color);
+    text-align: center;
     padding: 4px;
 }
