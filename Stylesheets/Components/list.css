@@ -1,0 +1,30 @@
+.list{
+    background-color: var(--st-white);
+    max-width: 30rem;
+    min-width: 15rem;
+    padding:1.5rem;
+}
+
+.list li{
+    list-style-type: none;
+    text-align:start;
+    font-size: 1.25rem;
+    padding:0.5rem;
+}
+
+.list li:hover{
+    color: var(--st-secondary-color);
+}
+
+.list-content{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.list-content li{
+    padding:13px
+}
+.list-content i{
+    font-size: 1.5rem;
+}
