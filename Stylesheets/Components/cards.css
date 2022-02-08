@@ -1,0 +1,165 @@
+body {
+    background-color: var(--st-background-grey);
+}
+
+.card {
+    width: 15rem;
+    height: clamp(20rem, 25.5rem, 27rem);
+    background-color: var(--st-white);
+    border-radius: 4px;
+}
+
+.card-overlay {
+    width: 15rem;
+    height: 21.5rem;
+    background-color: var(--st-white);
+    border-radius: 4px;
+}
+
+.card-text-only {
+    width: 17rem;
+    height: 16rem;
+    background-color: var(--st-white);
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-horizontal {
+    width: fit-content;
+    background-color: var(--st-white);
+    display: flex;
+}
+
+.image-container {
+    height: 10rem;
+    width: 100%;
+    position: relative;
+}
+
+.card-badge {
+    position: absolute;
+    background-color: var(--warning-color);
+    color: var(--st-white);
+    padding: 5px;
+    border-radius: 2px;
+    top: 3px;
+    left: 0;
+}
+
+.card-dismiss {
+    position: absolute;
+    cursor: pointer;
+    padding: 5px;
+    color: var(--st-black);
+    top: 2px;
+    right: 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-container {
+    padding: 0.2rem 0.3rem;
+}
+
+.reduced-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.reduced-price h3 {
+    color: var(--success-color);
+}
+
+.small-padding {
+    padding: 4px;
+}
+
+.org-price {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.org-price h4 :nth-child(1) {
+    color: var(--st-span-text);
+}
+
+.org-price h4 :nth-child(2) {
+    color: var(--st-primary-color);
+}
+
+.description {
+    padding: 10px 0px;
+}
+
+.order-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.order-buttons a {
+    text-decoration: none;
+    color: var(--st-white);
+    height: 2rem;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.order-buttons a:nth-child(1) {
+    background-color: var(--st-secondary-hover);
+    text-align: center;
+    min-width: 3rem;
+}
+
+.order-buttons a:nth-child(2) {
+    background-color: var(--st-primary-color);
+    text-align: center;
+    min-width: 3rem;
+}
+
+.heading-overlay {
+    position: absolute;
+    color: var(--st-black);
+    padding-left: 2px;
+    bottom: 4px;
+    left: 2px;
+}
+
+.image-container-horizontal img {
+    width: 26rem;
+}
+
+.order-buttons-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.order-buttons-horizontal a {
+    text-decoration: none;
+    color: var(--st-white);
+    height: 2rem;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.order-buttons-horizontal a:nth-child(1) {
+    background-color: var(--st-secondary-hover);
+    text-align: center;
+    padding: 4px;
+}
+
+.order-buttons-horizontal a:nth-child(2) {
+    background-color: var(--st-primary-color);
+    text-align: center;
+    padding: 4px;
+}
