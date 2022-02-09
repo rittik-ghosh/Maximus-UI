@@ -27,7 +27,7 @@ label {
     border-radius: 2px;
 }
 
-.error {
+.input-error {
     color: var(--st-span-text);
 }
 
@@ -35,7 +35,7 @@ label {
     border: 2px solid var(--st-span-text)
 }
 
-.success {
+.input-success {
     color: var(--success-color);
     background-color: transparent;
 }
