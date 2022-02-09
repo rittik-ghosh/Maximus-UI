@@ -42,46 +42,46 @@
     background-color: var(--st-red);
 }
 
-.outline {
+.btn-outline {
     border: 1px solid var(--st-primary-color);
     background-color: var(--st-white);
     color: var(--st-primary-color);
 }
 
-.outline:hover {
+.btn-outline:hover {
     background-color: var(--st-primary-color);
     color: var(--st-white);
 }
 
-.outline-secondary {
+.btn-outline-secondary {
     border: 1px solid var(--st-secondary-color);
     background-color: var(--st-white);
     color: var(--st-secondary-color);
 }
 
-.outline-secondary:hover {
+.btn-outline-secondary:hover {
     background-color: var(--st-secondary-color);
     color: var(--st-primary-color);
 }
 
-.outline-success {
+.btn-outline-success {
     border: 1px solid var(--success-color);
     background-color: var(--st-white);
     color: var(--success-text-color);
 }
 
-.outline-success:hover {
+.btn-outline-success:hover {
     background-color: var(--success-color);
     color: var(--success-color-light);
 }
 
-.outline-fail {
+.btn-outline-fail {
     border: 1px solid var(--error-color);
     background-color: var(--st-white);
     color: var(--error-color);
 }
 
-.outline-fail:hover {
+.btn-outline-fail:hover {
     background-color: var(--error-color);
     color: var(--st-white);
 }
