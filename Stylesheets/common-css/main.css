@@ -220,9 +220,14 @@ footer {
     min-width: 5rem;
     min-height: 6rem;
     border-radius: 5px;
+    padding:1rem;
     background-color: var(--st-background-grey);
     border: 2px solid var(--st-dark-gray);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.padding-auto{
+    padding-left:40%;
 }
 
 .footer-header {
