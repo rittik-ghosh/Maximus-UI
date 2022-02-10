@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheets/common-css/main.css">
+    <link rel="stylesheet" href="/Stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+        integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+        crossorigin="anonymous" />
+    <title>Maximus : Badge</title>
+</head>
+
+<body class="page">
+    <div class="page-container">
+        <nav>
+            <div class="left-nav">
+                <a href="../../index.html">Maximus</a>
+                <span class="small-text">UI</span>
+            </div>
+            <ul class="right-nav">
+                <li><a class="active" href="#">Docs</a></li>
+                <li><a class="active" href="#">Home</a></li>
+            </ul>
+        </nav>
+        <div class="doc-container">
+
+            <div class="doc-content">
+                <div class="content-title">
+                    Badge
+                </div>
+                <div class="content-subtitle">
+                    Badges are small circles, positioned either at top-right or bottom-right of the parent component. Badge can be used to display numbers, online / offline status, depending on where they are used.
+                </div>
+
+                <hr>
+
+                <!-- PROFILE BADGE -->
+
+                <div class="content-head">
+                    Profile Badge
+                </div>
+
+                <div class="content-subtitle">
+                    Profile Badge is used to show the current status of a user. The following class can be obtained by using the 'badge' class on parent and variant avatar class on child.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class="badge padding-between">
+                        <img src="/Assets/ferb.jpg" class="avatar-circle avatar-lg" alt="avatar">
+                        <div class="online"></div>
+                    </div>
+                    <div class=" badge padding-between">
+                        <img src="/Assets/phineas.jpg" class="avatar-circle avatar-lg" alt="avatar">  
+                        <div class="offline"></div>
+                    </div>
+                    <div class="badge padding-between">
+                        <img src="/Assets/ferb.jpg" class="avatar-circle avatar-lg" alt="avatar">
+                        <div class="dnd"></div>
+                    </div>
+                    <div class=" badge padding-between">
+                        <img src="/Assets/phineas.jpg" class="avatar-circle avatar-lg" alt="avatar"> 
+                        <div class="busy"></div> 
+                    </div>
+                    </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                    <-- Using the 'badge' class on parent along with avatar and variant class on child -->
+
+                    &lt;div class="badge"&gt;
+                    &lt;img class="avatar-circle avatar-lg" src="https://url-of-the-image" alt="avatar"&gt;
+                    &lt;div class="online"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;img class="avatar-circle avatar-lg" src="https://url-of-the-image" alt="avatar"&gt;
+                    &lt;div class="offline"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;img class="avatar-circle avatar-lg" src="https://url-of-the-image" alt="avatar"&gt;
+                    &lt;div class="dnd"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;img class="avatar-circle avatar-lg" src="https://url-of-the-image" alt="avatar"&gt;
+                    &lt;div class="busy"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+
+                <hr>
+
+                <!-- ICON BADGE -->
+                <div class="content-head">
+                    Icon Badge
+                </div>
+
+                <div class="content-subtitle">
+                    Number Badge is used to show the no. of items present in the parent component.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class="badge padding-between">
+                        <i class="fa fa-home"></i>
+                        <span>9</span>
+                    </div>
+                    <div class=" badge padding-between">
+                        <i class="fa fa-envelope"></i>
+                        <span>9</span>
+                    </div>
+                    <div class="badge padding-between">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>9</span>
+                    </div>
+                    <div class="badge padding-between">
+                        <i class="fa fa-bell"></i>
+                        <span>9</span>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                       
+                    &lt;div class="badge"&gt;
+                    &lt;i&gt;class="fa fa-home"&lt;/i&gt;
+                    &lt;span&gt;9&lt;/span&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;i&gt;class="fa fa-envelope"&lt;/i&gt;
+                    &lt;span&gt;9&lt;/span&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;i&gt;class="fa fa-shopping-cart"&lt;/i&gt;
+                    &lt;span&gt;9&lt;/span&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;i&gt;class="fa fa-bell"&lt;/i&gt;
+                    &lt;span&gt;9&lt;/span&gt;
+                    &lt;/div&gt;
+
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+            <div class="side-bar">
+
+                <!-- Get Started List Start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="#">
+                            List Menu
+                        </a>
+                    </div>
+                    <hr>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="#">
+                                Introduction
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Components List start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="#">Components</a>
+                    </div>
+                    <hr>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a  href="/Docs/Avatar/avatar-page.html">
+                                Avatar
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="/Docs/Alert/alert.html">
+                                Alert
+                            </a>
+                        </li>
+                        <li>
+                            <a class="active" href="/Docs/Badge/badge.html">
+                                Badge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Button/button.html">
+                                Button
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Card/card.html">
+                                Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Image/image.html">
+                                Image
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Input/input.html">
+                                Input
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/List/list.html">
+                                List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Ratings/rating.html">
+                                Ratings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Toast/toast.html">
+                                Toast
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-container centered">
+        <div class="footer-header">Tell Us What You Liked <i class="fa fa-heart"></i></div>
+        <ul class="social-links list-non-bullet centered">
+            <li><i class="fa fa-github"></i><a class="link" href="https://github.com/rittik-ghosh">Github</a></li>
+            <li><i class="fa fa-linkedin"></i><a class="link"
+                    href="https://www.linkedin.com/in/rittik-ghosh-28630a15a/">LinkdedIn</a></li>
+        </ul>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>
