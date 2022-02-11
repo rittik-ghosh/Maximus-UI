@@ -67,7 +67,7 @@ hr {
 .side-bar {
     font-family: 'Roboto', sans-serif;
     flex: 0 0 15rem;
-    margin-right: 1rem;
+    margin:0px 1rem 1.5rem 0.5rem;
     padding-left: 1rem;
     background-color: var(--st-background-grey);
     border-radius: 5px;
