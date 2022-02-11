@@ -261,3 +261,10 @@ footer .fa {
 footer .fa-heart {
     color: var(--st-span-text);
 }
+
+.snackbar-fix{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+}
