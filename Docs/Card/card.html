@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheets/common-css/main.css">
+    <link rel="stylesheet" href="/Stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+        integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+        crossorigin="anonymous" />
+    <title>Maximus : Card</title>
+</head>
+
+<body class="page">
+    <div class="page-container">
+        <nav>
+            <div class="left-nav">
+                <a href="../../index.html">Maximus</a>
+                <span class="small-text">UI</span>
+            </div>
+            <ul class="right-nav">
+                <li><a class="active" href="#">Docs</a></li>
+                <li><a class="active" href="#">Home</a></li>
+            </ul>
+        </nav>
+        <div class="doc-container">
+
+            <div class="doc-content">
+                <div class="content-title">
+                    Card
+                </div>
+                <div class="content-subtitle">
+                    Cards are surfaces that display content and actions on a single topic.They should be easy to scan
+                    for relevant and actionable information. Elements, like text and images, should be placed on them in
+                    a way that clearly indicates hierarchy.
+                </div>
+
+                <hr>
+
+                <!-- Card with badges -->
+
+                <div class="content-head">
+                    Card with badges
+                </div>
+
+                <div class="content-subtitle">
+                    Card with badges are used to highlight a specific content w.r.t the element displayed in the card.
+                </div>
+
+                <div class="show-container-small centered-column">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="/Assets/adidas.jpg" alt="adidas shoes">
+                            <div class="card-badge">Limited Offer</div>
+                        </div>
+                        <div class="content-container">
+                            <div class="heading">
+                                <h2>ADIDAS MAX</h2>
+                                <h4>The limited edition 2022</h4>
+                            </div>
+                            <div class="reduced-price">
+                                <h3>$40</h3>
+                                <div class="centered small-padding">
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <h5 class="small-padding">500</h5>
+                                </div>
+
+                            </div>
+                            <div class="org-price">
+                                <h4><strike>$100</strike></h4>
+                                <h4>60% Off</h4>
+                            </div>
+                            <div class="description">
+                                <P> Color : White</P>
+                                <P> Size : Large</P>
+                            </div>
+                        </div>
+                        <div class="order-buttons">
+                            <a href="#"><i class="fa fa-shopping-cart"></i>ADD TO CART</a>
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                                                   <-- Using class 'card' -->
+
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image-container"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/Assets/adidas.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"adidas shoes"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-badge"</span>&gt;</span>Limited Offer<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-container"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"heading"</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>ADIDAS MAX<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>The limited edition 2022<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reduced-price"</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>$40<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centered small-padding"</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-padding"</span>&gt;</span>500<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                
+                                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org-price"</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strike</span>&gt;</span>$100<span class="hljs-tag">&lt;/<span class="hljs-name">strike</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>60% Off<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span> Color : White<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span>  Size  : Large<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"order-buttons"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-shopping-cart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>ADD TO CART<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        </code>
+                    </pre>
+                </div>
+
+                <hr>
+
+                <!-- card with dismiss -->
+                <div class="content-head">
+                    Card with dismiss
+                </div>
+
+                <div class="content-subtitle">
+                    These cards display information and can be closed using the dismiss icon.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="/Assets/adidas.jpg" alt="adidas shoes">
+                            <div class="card-dismiss"><i class="fa fa-times"></i></div>
+                        </div>
+                        <div class="content-container">
+                            <div class="heading">
+                                <h2>ADIDAS MAX</h2>
+                                <h4>The limited edition 2022</h4>
+                            </div>
+                            <div class="reduced-price">
+                                <h3>$40</h3>
+                                <div class="centered small-padding">
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <h5 class="small-padding">500</h5>
+                                </div>
+
+                            </div>
+                            <div class="org-price">
+                                <h4><strike>$100</strike></h4>
+                                <h4>60% Off</h4>
+                            </div>
+                            <div class="description">
+                                <P> Color : White</P>
+                                <P> Size : Large</P>
+                            </div>
+                        </div>
+                        <div class="order-buttons">
+                            <a href="#"><i class="fa fa-shopping-cart"></i>ADD TO CART</a>
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                            <-- Using the 'card' class followed by 'card-dismiss'-->
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image-container"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/Assets/adidas.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"adidas shoes"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-dismiss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-times"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-container"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"heading"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>ADIDAS MAX<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>The limited edition 2022<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reduced-price"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>$40<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centered small-padding"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-padding"</span>&gt;</span>500<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org-price"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strike</span>&gt;</span>$100<span class="hljs-tag">&lt;/<span class="hljs-name">strike</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>60% Off<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span> Color : White<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span>  Size  : Large<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"order-buttons"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-shopping-cart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>ADD TO CART<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                
+                        </code>
+                    </pre>
+                </div>
+
+                <hr>
+
+                <!-- Overlay text -->
+                <div class="content-head">
+                    Card with Overlay Text
+                </div>
+
+                <div class="content-subtitle">
+                    This ia another type of card and can be obtained by using 'card-overlay' class.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class="card-overlay">
+                        <div class="image-container">
+                            <img src="/Assets/adidas.jpg" alt="adidas shoes">
+                            <div class="card-dismiss"><i class="fa fa-times"></i></div>
+                            <div class="heading-overlay">
+                                <h2>ADIDAS MAX</h2>
+                                <h4>The limited edition 2022</h4>
+                            </div>
+                        </div>
+                        <div class="content-container">
+
+                            <div class="reduced-price">
+                                <h3>$40</h3>
+                                <div class="centered small-padding">
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <h5 class="small-padding">500</h5>
+                                </div>
+
+                            </div>
+                            <div class="org-price">
+                                <h4><strike>$100</strike></h4>
+                                <h4>60% Off</h4>
+                            </div>
+                            <div class="description">
+                                <P> Color : White</P>
+                                <P> Size : Large</P>
+                            </div>
+                        </div>
+                        <div class="order-buttons">
+                            <a href="#"><i class="fa fa-shopping-cart"></i>ADD TO CART</a>
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                  <-- Using the class 'card-overlay'  -->
+
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-overlay shadow"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image-container"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/Assets/adidas.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"adidas shoes"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-dismiss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-times"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"heading-overlay"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>ADIDAS MAX<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>The limited edition 2022<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-container"</span>&gt;</span>
+                            
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reduced-price"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>$40<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centered small-padding"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-padding"</span>&gt;</span>500<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org-price"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strike</span>&gt;</span>$100<span class="hljs-tag">&lt;/<span class="hljs-name">strike</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>60% Off<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span> Color : White<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span>  Size  : Large<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"order-buttons"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-shopping-cart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>ADD TO CART<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                </code>
+                    </pre>
+                </div>
+
+
+                <hr>
+
+                <!-- Text-only cards-->
+                <div class="content-head">
+                    Text Only Cards
+                </div>
+
+                <div class="content-subtitle">
+                    These cards have only text content present in them and can be used using 'card-text-only' class.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class="card-text-only">
+                        <div class="content-container">
+                            <div class="heading">
+                                <h2>ADIDAS MAX</h2>
+                                <h4>The limited edition 2022</h4>
+                            </div>
+                            <div class="reduced-price">
+                                <h3>$40</h3>
+                                <div class="centered small-padding">
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <h5 class="small-padding">500</h5>
+                                </div>
+                
+                            </div>
+                            <div class="org-price">
+                                <h4><strike>$100</strike></h4>
+                                <h4>60% Off</h4>
+                            </div>
+                            <div class="description">
+                            <P> Color : White</P>
+                            <P>  Size  : Large</P>
+                            </div>
+                        </div>
+                        <div class="order-buttons">
+                            <a href="#"><i class="fa fa-shopping-cart"></i>ADD TO CART</a>
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                                <-- Using the 'card-text-only' class -->
+
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text-only"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-container"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"heading"</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>ADIDAS MAX<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>The limited edition 2022<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reduced-price"</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>$40<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centered small-padding"</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-padding"</span>&gt;</span>500<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                
+                                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org-price"</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strike</span>&gt;</span>$100<span class="hljs-tag">&lt;/<span class="hljs-name">strike</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>60% Off<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span> Color : White<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span>  Size  : Large<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"order-buttons"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-shopping-cart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>ADD TO CART<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                       
+                        </code>
+                    </pre>
+                </div>
+
+                <hr>
+
+                <!-- Horizontal cards-->
+                <div class="content-head">
+                    Horizontal Cards
+                </div>
+
+                <div class="content-subtitle">
+                    These cards have a horizontal layout and can be used using 'card-horizontal' class.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class="card-horizontal">
+                        <div class="image-container-horizontal">
+                            <img src="/Assets/adidas.jpg" alt="adidas shoes">
+                        </div>
+                        <div class="content-container">
+                            <div class="heading">
+                                <h2>ADIDAS MAX</h2>
+                                <h4>The limited edition 2022</h4>
+                            </div>
+                            <div class="reduced-price">
+                                <h3>$40</h3>
+                                <div class="centered small-padding">
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <h5 class="small-padding">500</h5>
+                                </div>
+                
+                            </div>
+                            <div class="org-price">
+                                <h4><strike>$100</strike></h4>
+                                <h4>60% Off</h4>
+                            </div>
+                            <div class="description">
+                            <P> Color : White</P>
+                            <P>  Size  : Large</P>
+                            </div>
+                            <div class="order-buttons-horizontal">
+                                <a href="#"><i class="fa fa-shopping-cart"></i>ADD TO CART</a>
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                     </div>
+                      
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                                <-- Using the 'card-horizontal' class -->
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-horizontal"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image-container-horizontal"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/Assets/adidas.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"adidas shoes"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-container"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"heading"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>ADIDAS MAX<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>The limited edition 2022<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reduced-price"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>$40<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centered small-padding"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-padding"</span>&gt;</span>500<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org-price"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strike</span>&gt;</span>$100<span class="hljs-tag">&lt;/<span class="hljs-name">strike</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>60% Off<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span> Color : White<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span>  Size  : Large<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"order-buttons-horizontal"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-shopping-cart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>ADD TO CART<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                               
+                       
+                        </code>
+                    </pre>
+                </div>
+                
+                <hr>
+
+                <!-- Shadow cards-->
+                <div class="content-head">
+                    Cards with Shadow
+                </div>
+
+                <div class="content-subtitle">
+                    These cards have a shadow feature present in them and can be used using card variant followed by 'shadow' class.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class="card shadow">
+                        <div class="image-container">
+                            <img src="/Assets/adidas.jpg" alt="adidas shoes">
+                            <div class="card-badge">Limited Offer</div>
+                        </div>
+                        <div class="content-container">
+                            <div class="heading">
+                                <h2>ADIDAS MAX</h2>
+                                <h4>The limited edition 2022</h4>
+                            </div>
+                            <div class="reduced-price">
+                                <h3>$40</h3>
+                                <div class="centered small-padding">
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <span class="material-icons ">star_outline</span>
+                                    <h5 class="small-padding">500</h5>
+                                </div>
+                
+                            </div>
+                            <div class="org-price">
+                                <h4><strike>$100</strike></h4>
+                                <h4>60% Off</h4>
+                            </div>
+                            <div class="description">
+                            <P> Color : White</P>
+                            <P>  Size  : Large</P>
+                            </div>
+                        </div>
+                        <div class="order-buttons">
+                            <a href="#"><i class="fa fa-shopping-cart"></i>ADD TO CART</a>
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                                <-- Using the 'card variant' followed by 'shadow' class -->
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card shadow"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image-container"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/Assets/adidas.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"adidas shoes"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-badge"</span>&gt;</span>Limited Offer<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-container"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"heading"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>ADIDAS MAX<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>The limited edition 2022<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reduced-price"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>$40<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centered small-padding"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons selected"</span>&gt;</span>star<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons "</span>&gt;</span>star_outline<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-padding"</span>&gt;</span>500<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org-price"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strike</span>&gt;</span>$100<span class="hljs-tag">&lt;/<span class="hljs-name">strike</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>60% Off<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span> Color : White<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">P</span>&gt;</span>  Size  : Large<span class="hljs-tag">&lt;/<span class="hljs-name">P</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"order-buttons"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-shopping-cart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>ADD TO CART<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                       
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="side-bar">
+
+                <!-- Get Started List Start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="#">
+                            List Menu
+                        </a>
+                    </div>
+                    <hr>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/index.html">
+                                Introduction
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Components List start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="#">Components</a>
+                    </div>
+                    <hr>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/Docs/Avatar/avatar.html">
+                                Avatar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Alert/alert.html">
+                                Alert
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Badge/badge.html">
+                                Badge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Button/button.html">
+                                Button
+                            </a>
+                        </li>
+                        <li>
+                            <a class="active" href="/Docs/Card/card.html">
+                                Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Image/image.html">
+                                Image
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Input/input.html">
+                                Input
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/List/list.html">
+                                List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Ratings/rating.html">
+                                Ratings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Toast/toast.html">
+                                Toast
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-container centered">
+        <div class="footer-header">Tell Us What You Liked <i class="fa fa-heart"></i></div>
+        <ul class="social-links list-non-bullet centered">
+            <li><i class="fa fa-github"></i><a class="link" href="https://github.com/rittik-ghosh" target="_blank">Github</a></li>
+            <li><i class="fa fa-linkedin"></i><a class="link"
+                    href="https://www.linkedin.com/in/rittik-ghosh-28630a15a/" target="_blank">LinkdedIn</a></li>
+        </ul>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

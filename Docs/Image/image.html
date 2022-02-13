@@ -13,7 +13,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
         integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
         crossorigin="anonymous" />
-    <title>Maximus : Introduction</title>
+    <title>Maximus : Image</title>
 </head>
 
 <body class="page">
@@ -24,7 +24,7 @@
                 <span class="small-text">UI</span>
             </div>
             <ul class="right-nav">
-                <li><a class="active" href="/index.html">Docs</a></li>
+                <li><a class="active" href="#">Docs</a></li>
                 <li><a class="active" href="#">Home</a></li>
             </ul>
         </nav>
@@ -32,35 +32,108 @@
 
             <div class="doc-content">
                 <div class="content-title">
-                    Introduction
+                    Image
                 </div>
                 <div class="content-subtitle">
-                    Maximus UI is an open source styling framework, which helps Developers to use best styles and
-                    components, by using pre-defined classnames.<br>
-                    Maximus helps you build your Project at much ease.
+                    Responsive Image Components are used to dsiplay Images on websites. They expand upto the width of the container they are in.
                 </div>
 
                 <hr>
 
-                <!-- INTRO -->
+                <!-- Square Image -->
 
                 <div class="content-head">
-                    Installation Guide
+                    Square Image
                 </div>
 
                 <div class="content-subtitle">
-                    In order to introduce Maximus to your project, Copy the Link given below and paste it in the
+                    Square images have an equal height and width. This can be used by asding the calss 'sq-img'
+                </div>
 
-                    <head> tag of your html, above all other style sheets.
+                <div class="show-container-small centered">
+                    <div class="padding-between">
+                        <img src="/Assets/ferb.jpg" class="sq-img" alt="avatar">
+                    </div>
+                    <div class="padding-between">
+                        <img src="/Assets/phineas.jpg" class="sq-img" alt="avatar">
+                    </div>
+                    <div class="padding-between">
+                        <img src="/Assets/sister.jpg" class="sq-img" alt="avatar">
+                    </div>
                 </div>
 
                 <div class="example-code">
                     <pre>
                         <code class="html">
-                    &lt;link rel="stylesheet" href="https://https://maximus-ui.netlify.app/Stylesheets/style.css"&gt;
+                    <-- Using the 'sq-img' class name -->
+
+                    &lt;img src="url of the pic" class="sq-img"&gt;&lt;/img&gt;
+                 </code>
                     </pre>
                 </div>
+
                 <hr>
+
+                <!-- Round Image-->
+                <div class="content-head">
+                    Round Image
+                </div>
+
+                <div class="content-subtitle">
+                    Round images are circular and can be obtained by adding the class 'round-img'.
+                </div>
+
+                <div class="show-container-small centered">
+                        <div class="padding-between">
+                            <img src="/Assets/ferb.jpg" class="round-img" alt="avatar">
+                        </div>
+                        <div class="padding-between">
+                            <img src="/Assets/phineas.jpg" class="round-img" alt="avatar">
+                        </div>
+                        <div class="padding-between">
+                            <img src="/Assets/sister.jpg" class="round-img" alt="avatar">
+                        </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                            <-- Using the 'sq-img' class name -->
+
+                            &lt;img src="url of the pic" class="round-img"&gt;&lt;/img&gt;
+
+                        </code>
+                    </pre>
+                </div>
+
+                <hr>
+
+                <!--ICON ALERT -->
+                <div class="content-head">
+                    Responsive Image
+                </div>
+
+                <div class="content-subtitle">
+                    Responsive Image change their dimensions w.r.t the size of the parent container. 
+                </div>
+
+                <div class="big-container centered">
+                    <div class="padding-between">
+                         <img src="/Assets/ferb.jpg" class="responsive-img" alt="avatar">
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                            <-- Using the 'responsive-img' class name -->
+
+                            &lt;img src="url of the pic" class="responsive-img"&gt;&lt;/img&gt;
+                            
+                        </code>
+                    </pre>
+                </div>
+
             </div>
 
             <div class="side-bar">
@@ -75,7 +148,7 @@
                     <hr>
                     <ul class="list-subtopic">
                         <li>
-                            <a class="active" href="/index.html">
+                            <a href="/index.html">
                                 Introduction
                             </a>
                         </li>
@@ -90,17 +163,17 @@
                     <hr>
                     <ul class="list-subtopic">
                         <li>
-                            <a href="/Docs/Avatar/avatar.html">
+                            <a  href="/Docs/Avatar/avatar.html">
                                 Avatar
                             </a>
                         </li>
                         <li>
-                            <a href="/Docs/Alert/alert.html">
+                            <a  href="/Docs/Alert/alert.html">
                                 Alert
                             </a>
                         </li>
                         <li>
-                            <a href="/Docs/Badge/badge.html">
+                            <a  href="/Docs/Badge/badge.html">
                                 Badge
                             </a>
                         </li>
@@ -115,7 +188,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/Docs/Image/image.html">
+                            <a class="active" href="/Docs/Image/image.html">
                                 Image
                             </a>
                         </li>

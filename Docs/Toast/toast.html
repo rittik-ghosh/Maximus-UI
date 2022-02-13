@@ -13,7 +13,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
         integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
         crossorigin="anonymous" />
-    <title>Maximus : Introduction</title>
+    <title>Maximus : Toast</title>
 </head>
 
 <body class="page">
@@ -24,7 +24,7 @@
                 <span class="small-text">UI</span>
             </div>
             <ul class="right-nav">
-                <li><a class="active" href="/index.html">Docs</a></li>
+                <li><a class="active" href="#">Docs</a></li>
                 <li><a class="active" href="#">Home</a></li>
             </ul>
         </nav>
@@ -32,35 +32,62 @@
 
             <div class="doc-content">
                 <div class="content-title">
-                    Introduction
+                    Toast
                 </div>
                 <div class="content-subtitle">
-                    Maximus UI is an open source styling framework, which helps Developers to use best styles and
-                    components, by using pre-defined classnames.<br>
-                    Maximus helps you build your Project at much ease.
+                    Toast display messages related to an interaction happened between user and the website. They usually
+                    stay on the screen for 2-3 seconds and then disappear. <br>
+                    Toast can be used to show success messages, warnings or errors.
                 </div>
 
                 <hr>
 
-                <!-- INTRO -->
-
+                <!-- Toast -->
                 <div class="content-head">
-                    Installation Guide
+                   Simple Toast
                 </div>
 
                 <div class="content-subtitle">
-                    In order to introduce Maximus to your project, Copy the Link given below and paste it in the
+                   The toast can be obtained by using the class 'Snack-bar' followed by the variant i.e. the place you want the toast to appear. The variants include bottom-center, bottom-right, bottom-left, top-center, top-right, top-left.
+                </div>
 
-                    <head> tag of your html, above all other style sheets.
+                <div class="show-container-small centered">
+                    <div class="snack-bar snackbar-fix">
+                        <div class="content">
+                            <p>Can't send photo. Retry in 5 seconds.</p>
+                        </div>
+                        <div class="btns">
+                           <button class="margin-center bgcolor-transparent retry">
+                                RETRY
+                           </button>
+                           <button class="margin-center bgcolor-transparent close">
+                                X
+                           </button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="example-code">
                     <pre>
                         <code class="html">
-                    &lt;link rel="stylesheet" href="https://https://maximus-ui.netlify.app/Stylesheets/style.css"&gt;
+                        <-- Using the 'snack-bar' class name followed by variant-->
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"snack-bar"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Can't send photo. Retry in 5 seconds.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btns"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"margin-center bgcolor-transparent retry"</span>&gt;</span>
+                                        RETRY
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"margin-center bgcolor-transparent close"</span>&gt;</span>
+                                        X
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                 </code>
                     </pre>
                 </div>
-                <hr>
             </div>
 
             <div class="side-bar">
@@ -75,7 +102,7 @@
                     <hr>
                     <ul class="list-subtopic">
                         <li>
-                            <a class="active" href="/index.html">
+                            <a href="/index.html">
                                 Introduction
                             </a>
                         </li>
@@ -135,7 +162,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/Docs/Toast/toast.html">
+                            <a class="active" href="/Docs/Toast/toast.html">
                                 Toast
                             </a>
                         </li>

@@ -13,7 +13,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
         integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
         crossorigin="anonymous" />
-    <title>Maximus : Introduction</title>
+    <title>Maximus : Badge</title>
 </head>
 
 <body class="page">
@@ -24,7 +24,7 @@
                 <span class="small-text">UI</span>
             </div>
             <ul class="right-nav">
-                <li><a class="active" href="/index.html">Docs</a></li>
+                <li><a class="active" href="#">Docs</a></li>
                 <li><a class="active" href="#">Home</a></li>
             </ul>
         </nav>
@@ -32,35 +32,129 @@
 
             <div class="doc-content">
                 <div class="content-title">
-                    Introduction
+                    Badge
                 </div>
                 <div class="content-subtitle">
-                    Maximus UI is an open source styling framework, which helps Developers to use best styles and
-                    components, by using pre-defined classnames.<br>
-                    Maximus helps you build your Project at much ease.
+                    Badges are small circles, positioned either at top-right or bottom-right of the parent component. Badge can be used to display numbers, online / offline status, depending on where they are used.
                 </div>
 
                 <hr>
 
-                <!-- INTRO -->
+                <!-- PROFILE BADGE -->
 
                 <div class="content-head">
-                    Installation Guide
+                    Profile Badge
                 </div>
 
                 <div class="content-subtitle">
-                    In order to introduce Maximus to your project, Copy the Link given below and paste it in the
+                    Profile Badge is used to show the current status of a user. The following class can be obtained by using the 'badge' class on parent and variant avatar class on child.
+                </div>
 
-                    <head> tag of your html, above all other style sheets.
+                <div class="show-container-small centered">
+                    <div class="badge padding-between">
+                        <img src="/Assets/ferb.jpg" class="avatar-circle avatar-lg" alt="avatar">
+                        <div class="online"></div>
+                    </div>
+                    <div class=" badge padding-between">
+                        <img src="/Assets/phineas.jpg" class="avatar-circle avatar-lg" alt="avatar">  
+                        <div class="offline"></div>
+                    </div>
+                    <div class="badge padding-between">
+                        <img src="/Assets/ferb.jpg" class="avatar-circle avatar-lg" alt="avatar">
+                        <div class="dnd"></div>
+                    </div>
+                    <div class=" badge padding-between">
+                        <img src="/Assets/phineas.jpg" class="avatar-circle avatar-lg" alt="avatar"> 
+                        <div class="busy"></div> 
+                    </div>
+                    </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                    <-- Using the 'badge' class on parent along with avatar and variant class on child -->
+
+                    &lt;div class="badge"&gt;
+                    &lt;img class="avatar-circle avatar-lg" src="https://url-of-the-image" alt="avatar"&gt;
+                    &lt;div class="online"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;img class="avatar-circle avatar-lg" src="https://url-of-the-image" alt="avatar"&gt;
+                    &lt;div class="offline"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;img class="avatar-circle avatar-lg" src="https://url-of-the-image" alt="avatar"&gt;
+                    &lt;div class="dnd"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;img class="avatar-circle avatar-lg" src="https://url-of-the-image" alt="avatar"&gt;
+                    &lt;div class="busy"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+
+                <hr>
+
+                <!-- ICON BADGE -->
+                <div class="content-head">
+                    Icon Badge
+                </div>
+
+                <div class="content-subtitle">
+                    Number Badge is used to show the no. of items present in the parent component.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class="badge padding-between">
+                        <i class="fa fa-home"></i>
+                        <span>9</span>
+                    </div>
+                    <div class=" badge padding-between">
+                        <i class="fa fa-envelope"></i>
+                        <span>9</span>
+                    </div>
+                    <div class="badge padding-between">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>9</span>
+                    </div>
+                    <div class="badge padding-between">
+                        <i class="fa fa-bell"></i>
+                        <span>9</span>
+                    </div>
                 </div>
 
                 <div class="example-code">
                     <pre>
                         <code class="html">
-                    &lt;link rel="stylesheet" href="https://https://maximus-ui.netlify.app/Stylesheets/style.css"&gt;
+                       
+                    &lt;div class="badge"&gt;
+                    &lt;i&gt;class="fa fa-home"&lt;/i&gt;
+                    &lt;span&gt;9&lt;/span&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;i&gt;class="fa fa-envelope"&lt;/i&gt;
+                    &lt;span&gt;9&lt;/span&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;i&gt;class="fa fa-shopping-cart"&lt;/i&gt;
+                    &lt;span&gt;9&lt;/span&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge"&gt;
+                    &lt;i&gt;class="fa fa-bell"&lt;/i&gt;
+                    &lt;span&gt;9&lt;/span&gt;
+                    &lt;/div&gt;
+
+                        </code>
                     </pre>
                 </div>
-                <hr>
+
             </div>
 
             <div class="side-bar">
@@ -75,7 +169,7 @@
                     <hr>
                     <ul class="list-subtopic">
                         <li>
-                            <a class="active" href="/index.html">
+                            <a href="/index.html">
                                 Introduction
                             </a>
                         </li>
@@ -90,17 +184,17 @@
                     <hr>
                     <ul class="list-subtopic">
                         <li>
-                            <a href="/Docs/Avatar/avatar.html">
+                            <a  href="/Docs/Avatar/avatar.html">
                                 Avatar
                             </a>
                         </li>
                         <li>
-                            <a href="/Docs/Alert/alert.html">
+                            <a  href="/Docs/Alert/alert.html">
                                 Alert
                             </a>
                         </li>
                         <li>
-                            <a href="/Docs/Badge/badge.html">
+                            <a class="active" href="/Docs/Badge/badge.html">
                                 Badge
                             </a>
                         </li>

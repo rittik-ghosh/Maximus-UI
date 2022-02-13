@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheets/common-css/main.css">
+    <link rel="stylesheet" href="/Stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+        integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+        crossorigin="anonymous" />
+    <title>Maximus : Button</title>
+</head>
+
+<body class="page">
+    <div class="page-container">
+        <nav>
+            <div class="left-nav">
+                <a href="../../index.html">Maximus</a>
+                <span class="small-text">UI</span>
+            </div>
+            <ul class="right-nav">
+                <li><a class="active" href="#">Docs</a></li>
+                <li><a class="active" href="#">Home</a></li>
+            </ul>
+        </nav>
+        <div class="doc-container">
+
+            <div class="doc-content">
+                <div class="content-title">
+                    Button
+                </div>
+                <div class="content-subtitle">
+                    Buttons are the soul of an interactive Web Application. Buttons allow users to take actions, and
+                    make choices, with a single tap.
+                </div>
+
+                <hr>
+
+                <!-- Contained Button -->
+
+                <div class="content-head">
+                    Contained Button
+                </div>
+
+                <div class="content-subtitle">
+                    Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain
+                    actions that are primary to your app.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class=" padding-between">
+                        <button class="btn">Primary</button>
+                    </div>
+                    <div class=" padding-between">
+                        <button class="btn btn-secondary">Secondary</button>
+                    </div>
+                    <div class=" padding-between">
+                        <button class="btn btn-success">Success</button>
+                    </div>
+                    <div class=" padding-between">
+                        <button class="btn btn-fail">Error</button>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                            <-- Using the 'btn' class followed by 'btn-variant' -->
+
+                    &lt;button class="btn"&gt;Primary&lt;/button&gt;
+
+                    &lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+
+                    &lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+
+                    &lt;button class="btn btn-fail"&gt;Error&lt;/button&gt;
+
+                        </code>
+                    </pre>
+                </div>
+
+                <hr>
+
+                <!-- Outline Button -->
+                <div class="content-head">
+                    Outline Button
+                </div>
+
+                <div class="content-subtitle">
+                    In need of a button, but not the hefty background colors they bring? Use 'btn' with
+                    '.btn-outline-variant'.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class=" padding-between">
+                        <button class="btn btn-outline">Primary</button>
+                    </div>
+                    <div class=" padding-between">
+                        <button class="btn btn-outline-secondary">Secondary</button>
+                    </div>
+                    <div class=" padding-between">
+                        <button class="btn btn-outline-success">Success</button>
+                    </div>
+                    <div class=" padding-between">
+                        <button class="btn btn-outline-fail">Success</button>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                            <-- Using the 'btn' class followed by 'outline-variant' -->
+
+                            &lt;button class="btn btn-outline"&gt;Primary&lt;/button&gt;
+
+                            &lt;button class="btn btn-outline-secondary"&gt;Secondary&lt;/button&gt;
+        
+                            &lt;button class="btn btn-outline-success"&gt;Success&lt;/button&gt;
+        
+                            &lt;button class="btn btn-outline-fail"&gt;Error&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+
+
+                <hr>
+
+                <!-- Link Button -->
+                <div class="content-head">
+                    Link Button
+                </div>
+
+                <div class="content-subtitle">
+                    To use a link action on click of a button use class 'btn-link'.
+                </div>
+
+                <div class="show-container-small centered">
+                    <div class="padding-between">
+                        <button class="btn">
+                            <a href="#">DEFAULT</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                            <-- Using the 'btn' class followed by link -->
+
+                            &lt;button class="btn btn-outline"&gt;DEFAULT
+                            &lt;a href=" url to br directed"&gt;&lt;/a&gt;
+                            &lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+
+
+                <hr>
+
+                <!-- Icon Button -->
+                <div class="content-head">
+                    Icon Button
+                </div>
+
+                <div class="content-subtitle">
+                    If you need an icon button use 'btn' followed by 'btn-icon'
+                </div>
+
+                <div class="show-container-small centered">
+                    <button class="btn btn-icon">
+                        <i class="fa fa-info-circle"></i>
+                        SAVE
+                    </button>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                            <-- Using the 'btn' class followed by 'btn-icon' -->
+
+                            &lt;button class="btn btn-icon"&gt;DEFAULT
+                            &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;
+                            &lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- floating button -->
+
+                <div class="content-head">
+                    Floating Button
+                </div>
+
+                <div class="content-subtitle">
+                    If you need an floating button use 'btn' followed by 'btn-floating'
+                </div>
+
+                <div class="show-container-small centered">
+                    <button class="btn-floating">
+                        <i class="fa fa-info-circle"></i>
+                    </button>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                            <-- Using the 'btn' class followed by 'btn-floating' -->
+
+                            &lt;button class="btn btn-floating"&gt;DEFAULT
+                            &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;
+                            &lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+            <div class="side-bar">
+
+                <!-- Get Started List Start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="#">
+                            List Menu
+                        </a>
+                    </div>
+                    <hr>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/index.html">
+                                Introduction
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Components List start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="#">Components</a>
+                    </div>
+                    <hr>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/Docs/Avatar/avatar.html">
+                                Avatar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Alert/alert.html">
+                                Alert
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Badge/badge.html">
+                                Badge
+                            </a>
+                        </li>
+                        <li>
+                            <a class="active" href="/Docs/Button/button.html">
+                                Button
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Card/card.html">
+                                Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Image/image.html">
+                                Image
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Input/input.html">
+                                Input
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/List/list.html">
+                                List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Ratings/rating.html">
+                                Ratings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Toast/toast.html">
+                                Toast
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-container centered">
+        <div class="footer-header">Tell Us What You Liked <i class="fa fa-heart"></i></div>
+        <ul class="social-links list-non-bullet centered">
+            <li><i class="fa fa-github"></i><a class="link" href="https://github.com/rittik-ghosh" target="_blank">Github</a></li>
+            <li><i class="fa fa-linkedin"></i><a class="link"
+                    href="https://www.linkedin.com/in/rittik-ghosh-28630a15a/" target="_blank">LinkdedIn</a></li>
+        </ul>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

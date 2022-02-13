@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheets/common-css/main.css">
+    <link rel="stylesheet" href="/Stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+        integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+        crossorigin="anonymous" />
+    <title>Maximus : Alert</title>
+</head>
+
+<body class="page">
+    <div class="page-container">
+        <nav>
+            <div class="left-nav">
+                <a href="../../index.html">Maximus</a>
+                <span class="small-text">UI</span>
+            </div>
+            <ul class="right-nav">
+                <li><a class="active" href="#">Docs</a></li>
+                <li><a class="active" href="#">Home</a></li>
+            </ul>
+        </nav>
+        <div class="doc-container">
+
+            <div class="doc-content">
+                <div class="content-title">
+                    Alert
+                </div>
+                <div class="content-subtitle">
+                    An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.
+                </div>
+
+                <hr>
+
+                <!-- SIMPLE ALERT -->
+
+                <div class="content-head">
+                    Simple Alert
+                </div>
+
+                <div class="content-subtitle">
+                    Simple Alerts can be created using alert class, followed by the variant name.
+                </div>
+
+                <div class="show-container-small centered-column">
+                    <div class="alert primary ">
+                        <strong>Primary!</strong> This is a Primary Alert - Check it now!
+                    </div>
+            
+                    <div class="alert error">
+                        <strong>Error! </strong> This is an Error Alert - Check it now!
+                    </div>
+            
+                    <div class="alert success">
+                        <strong>Success! </strong> This is a Success Alert - Check it now!
+                    </div>
+            
+                    <div class="alert warning">
+                        <strong>Warning! </strong> This is a Warning Alert - Check it now!
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                    <-- Using the 'avatar primary/error/success/warning' class name -->
+
+                    &lt;div class="alert primary"&gt;
+                    &lt;strong&gt; Primary!"&lt;strong&gt; This is a Primary Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert error"&gt;
+                    &lt;strong&gt; Error!"&lt;strong&gt; This is a Error Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert success"&gt;
+                    &lt;strong&gt; Success!"&lt;strong&gt; This is a Success Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert warning"&gt;
+                    &lt;strong&gt; Warning!"&lt;strong&gt; This is a Warning Alert - Check it now!
+                    &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+
+                <hr>
+
+                <!-- OUTLINE ALERT -->
+                <div class="content-head">
+                    Outline Alert
+                </div>
+
+                <div class="content-subtitle">
+                    Outline alerts are created by using alert class, followed by outline-variant.
+                </div>
+
+                <div class="show-container-small centered-column">
+                    <div class="alert outline-primary ">
+                        <i class="fa fa-info-circle"></i><strong>Primary!</strong> This is a Primary Alert - Check it now!
+                    </div>
+            
+                    <div class="alert outline-error">
+                        <i class="fa fa-exclamation-triangle"></i><strong>Error!</strong> This is an Error Alert - Check it now!
+                    </div>
+            
+                    <div class="alert outline-success">
+                        <i class="fa fa-check-circle"></i> <strong>Success!</strong> This is a Success Alert - Check it now!
+                    </div>
+            
+                    <div class="alert outline-warning">
+                        <i class="fa fa-exclamation-circle"></i>  <strong>Warning!</strong> This is a Warning Alert - Check it now!
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                            <-- Using the alert class, followed by the outline-(variant) -->
+
+                       
+                    &lt;div class="alert outline-primary"&gt;
+                    &lt;strong&gt; Primary!"&lt;strong&gt; This is a Primary Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert outline-error"&gt;
+                    &lt;strong&gt; Error!"&lt;strong&gt; This is a Error Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert outline-success"&gt;
+                    &lt;strong&gt; Success!"&lt;strong&gt; This is a Success Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert outline-warning"&gt;
+                    &lt;strong&gt; Warning!"&lt;strong&gt; This is a Warning Alert - Check it now!
+                    &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+
+                <hr>
+
+                <!--ICON ALERT -->
+                <div class="content-head">
+                    Icon Alert
+                </div>
+
+                <div class="content-subtitle">
+                    Icon alerts are created by using alert class, followed by fadecolor-variant. 
+                </div>
+
+                <div class="big-container centered-column">
+                    <div class="alert fadecolor-primary ">
+                        <i class="fa fa-info-circle"></i><strong>Primary!</strong> This is a Primary Alert - Check it now!
+                    </div>
+            
+                    <div class="alert fadecolor-error">
+                        <i class="fa fa-exclamation-triangle"></i> <strong>Error!</strong> This is an Error Alert - Check it now!
+                    </div>
+            
+                    <div class="alert fadecolor-success">
+                        <i class="fa fa-check-circle"></i><strong>Success!</strong> This is a Success Alert - Check it now!
+                    </div>
+            
+                    <div class="alert fadecolor-warning">
+                        <i class="fa fa-exclamation-circle"></i> <strong>Warning!</strong> This is a Warning Alert - Check it now!
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                    <-- Using the alert class, followed by the fadecolor-(variant)-->
+
+                    &lt;div class="alert fadecolor-primary"&gt;
+                    &lt;strong&gt; Primary!"&lt;strong&gt; This is a Primary Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert fadecolor-error"&gt;
+                    &lt;strong&gt; Error!"&lt;strong&gt; This is a Error Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert fadecolor-success"&gt;
+                    &lt;strong&gt; Success!"&lt;strong&gt; This is a Success Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert fadecolor-warning"&gt;
+                    &lt;strong&gt; Warning!"&lt;strong&gt; This is a Warning Alert - Check it now!
+                    &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+            <div class="side-bar">
+
+                <!-- Get Started List Start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="#">
+                            List Menu
+                        </a>
+                    </div>
+                    <hr>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/index.html">
+                                Introduction
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Components List start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="#">Components</a>
+                    </div>
+                    <hr>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a  href="/Docs/Avatar/avatar.html">
+                                Avatar
+                            </a>
+                        </li>
+                        <li>
+                            <a class="active" href="/Docs/Alert/alert.html">
+                                Alert
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="/Docs/Badge/badge.html">
+                                Badge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Button/button.html">
+                                Button
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Card/card.html">
+                                Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Image/image.html">
+                                Image
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Input/input.html">
+                                Input
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/List/list.html">
+                                List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Ratings/rating.html">
+                                Ratings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Docs/Toast/toast.html">
+                                Toast
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-container centered">
+        <div class="footer-header">Tell Us What You Liked <i class="fa fa-heart"></i></div>
+        <ul class="social-links list-non-bullet centered">
+            <li><i class="fa fa-github"></i><a class="link" href="https://github.com/rittik-ghosh" target="_blank">Github</a></li>
+            <li><i class="fa fa-linkedin"></i><a class="link"
+                    href="https://www.linkedin.com/in/rittik-ghosh-28630a15a/" target="_blank">LinkdedIn</a></li>
+        </ul>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>
